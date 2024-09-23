@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class actividad_01 {
+public class Actividad_01 {
     public static void main(String[] args){
         //Parte 1: Listar el nombre de todos los ficheros ubicados en un directorio (en clase hemos puesto como ejemplo un directorio creado en el paquete resources)
         File directorio= new File("src/resources/directorio");
@@ -26,9 +26,8 @@ public class actividad_01 {
         } catch (IOException e) {
             System.out.println("ha habido un error");
         }
-        //Parte 3: Listar el nombre de todos los ficheros y directorios de una ruta concreta, como por ejemplo C:/Users
+        //Parte 3: Listar el nombre de todos los ficheros y directorios de una ruta concreta, como por ejemplo C:/Users tenéis que utilizar el concepto de recursividad.
 
-        //Para la parte 3 tenéis que utilizar el concepto de recursividad.
         System.out.println("introduce la ruta que quieres listas");
         Scanner teclado=new Scanner(System.in);
         String ruta= teclado.next();
@@ -46,7 +45,7 @@ public class actividad_01 {
             for (File archivo : archivos) {
                 // Imprimir la ruta del archivo o directorio
                 System.out.println(archivo.getAbsolutePath());
-                System.out.println(archivo.length());
+
 
                 // Si es un directorio, llamar recursivamente
                 if (archivo.isDirectory()) {
