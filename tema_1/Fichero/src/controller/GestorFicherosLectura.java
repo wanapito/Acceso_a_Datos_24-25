@@ -2,7 +2,7 @@ package controller;
 
 import java.io.*;
 
-public class GestorFicheros {
+public class GestorFicherosLectura {
 
     public void lecturaDirectorios(String path) {
         File file = new File(path);
@@ -85,6 +85,9 @@ public class GestorFicheros {
         }
 
     }
+
+
+
 }
 
 
